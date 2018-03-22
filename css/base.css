@@ -67,11 +67,16 @@ input[type=date]:focus
     color:#333333;
     box-shadow: 0 3px 2px rgba(0,0,0,.6);
 }
-.task-item .delete,
+.task-item .del,
 .task-item .detail{
     float: right;
     margin-left: 10px;
     cursor: pointer;
+}
+.task-item .task-content{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .task-item:hover{
     background-color: #dddddd;
@@ -95,6 +100,7 @@ input[type=date]:focus
     background-color: #ffffff;
     padding: 10px;
     width: 50%;
+    height: 300px;
     color: #333333;
 }
 .task-detail .content{
@@ -102,6 +108,40 @@ input[type=date]:focus
 }
 textarea{
     width: 100%;
-    height: 80px;
-    margin-top: 20px;
+    height: 100px;
+    margin-top: 10px;
+}
+.task-detail button{
+    margin-top: 15px;
+}
+.delete-trfa{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,.2);
+    display: none;
+}
+.task-delete{
+    color: #333333;
+    position: absolute;
+    left: 10%;
+    right:10%;
+    top:20%;
+    bottom:0;
+    background-color: #ffffff;
+    display: none;
+    text-align: center;
+}
+.task-delete .sel{
+    text-align: center;
+    position: absolute;
+    bottom:10%;
+    left: 30%;
+    right:30%;
+}
+.task-delete button:first-child{
+     margin-right: 50%;
+     float: left;
 }
